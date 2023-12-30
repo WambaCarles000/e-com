@@ -1,2 +1,2 @@
 # e-com
-an e-com website ,using react for the frontend
+a  website frontend template ,using react 
