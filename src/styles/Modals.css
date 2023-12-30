@@ -1,0 +1,50 @@
+/* Style pour la modale */
+.custom-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(251, 248, 248);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px  rgb(251, 248, 248);
+    max-width: 80%; /* Ajustez selon vos besoins */
+    width: 400px; /* Ajustez selon vos besoins */
+    height: 100px;
+  }
+  
+  /* Style pour le fond obscur de la modale */
+  .custom-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Style pour le bouton de fermeture de la modale */
+  .modal-close-btn {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    background: none;
+    border: none;
+    padding: 8px;
+    color: #121212;
+  }
+  
+  /* Style pour le contenu de la modale */
+  .custom-modal-content {
+    max-width: 100%; /* Ajustez selon vos besoins */
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Ajoutez d'autres styles nécessaires ici */
+  

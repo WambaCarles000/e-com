@@ -18,7 +18,25 @@ function Cart({ cart, updateCart }) {
 
 
 
+function removeFromCart(name) {
+  const currentPlantSaved = cart.find((plant) => plant.name === name);
 
+  if (currentPlantSaved) {
+    const cartFilteredCurrentPlant = cart.filter(
+      (plant) => plant.name !== name
+    );
+
+    // Si la quantité est supérieure à 1, décrémentez la quantité, sinon supprimez complètement l'élément du panier
+    if (currentPlantSaved.amount > 1) {
+      updateCart([
+        ...cartFilteredCurrentPlant,
+        { name, price: currentPlantSaved.price, amount: currentPlantSaved.amount - 1 },
+      ]);
+    } else {
+      updateCart([...cartFilteredCurrentPlant]);
+    }
+  }
+}
 
 
 	return isOpen ? (
@@ -35,7 +53,10 @@ function Cart({ cart, updateCart }) {
 					<ul>
 						{cart.map(({ name, price, amount }, index) => (
 							<div key={`${name}-${index}`}>
-								{name} {price}€ x {amount}
+				
+			{name} {price}€ x {amount}<button onClick={()=>removeFromCart(name)} style={{ borderRadius:8 }}><i>retirer</i></button>
+							
+ 
 							</div>
 						))}
 					</ul>
