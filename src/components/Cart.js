@@ -13,7 +13,7 @@ function Cart({ cart, updateCart }) {
 
 /* useEffect */
 	useEffect(() => {
-		document.title = `la-maison-jungle: ${total}€ d'achats`
+		document.title = `green-space: ${total}€ d'achats`
 	}, [total])
 
 
