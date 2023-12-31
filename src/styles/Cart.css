@@ -6,6 +6,7 @@
 	flex-direction: column;
 	justify-content: flex-start;
 	width: 300px;
+	transition: transform 0.3s ease-in-out; /* Ajoutez une transition à la propriété transform */
 }
 
 .lmj-cart-add-button {
@@ -28,8 +29,27 @@
 .lmj-cart-closed {
 	padding: 32px;
 	width: 300px;
+	transform: translateX(100%); /* Déplacez le panier hors de l'écran lorsqu'il est fermé */
 }
 
 .lmj-cart-closed > button {
 	color: black;
+	background-color: #4caf50; /* Couleur de fond */
+	color: #fff; /* Couleur du texte */
+	font-size: 16px;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 20px;
+	cursor: pointer;
+	transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+.lmj-cart-closed > button:hover {
+
+	background-color: #45a049; /* Changement de couleur au survol */
+	transform: scale(1.05); /* Légère augmentation de la taille au survol */
+
+
+
 }

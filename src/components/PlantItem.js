@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import CareScale from './CareScale';
 import Modal from 'react-modal';
 import '../styles/PlantItem.css';
-import '../styles/Modals.css'
+import '../styles/ModalsPlantItem.css'
 
 
 

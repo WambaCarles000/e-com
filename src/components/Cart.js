@@ -71,7 +71,9 @@ function removeFromCart(name) {
 		<div className='lmj-cart-closed'>
 			<button
 				className='lmj-cart-toggle-button'
-				onClick={() => setIsOpen(true)}
+				onClick={() => setIsOpen(true)	
+				
+				}
 			>
 				Ouvrir le Panier
 			</button>
